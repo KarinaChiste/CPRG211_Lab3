@@ -6,7 +6,16 @@ using System.Threading.Tasks;
 
 namespace Lab3
 {
-    internal interface IAnimal
+    public interface IAnimal
     {
+        
+        string Name { get; set; }
+        string Colour { get; set; }
+        string Height { get; set; }
+        int Age { get; set; }
+
+        abstract void Eat();
+
+        string Cry();
     }
 }
